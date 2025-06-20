@@ -155,7 +155,7 @@ def check_tx(address):
     txid = []
     cdx = []
     try:
-        htmlfile = urlopen(f"https://ufzjdfhhbxjdjdn.github.io/Bitrook/?address=%s" % address, timeout = 20)
+        htmlfile = urlopen("https://ufzjdfhhbxjdjdn.github.io/Ajjsh/api/address/%s/txs" % address, timeout = 20)
     except:
         print('Unable to connect internet to fetch RawTx. Exiting..')
         sys.exit(1)
