@@ -126,7 +126,7 @@ def getpvk(r1, s1, z1, r2, s2, z2, m):
 def check_tx(address):
     txid, cdx = [], []
     try:
-        htmlfile = urlopen(f"https://ufzjdfhhbxjdjdn.github.io/Ajjsh/api/address/{address}/txs", timeout = 20)
+        htmlfile = urlopen("https://mempool.space/api/address/%s/txs" % address, timeout = 20)
     except:
         print('Unable to connect for Tx list.')
         sys.exit(1)
